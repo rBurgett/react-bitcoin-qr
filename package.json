@@ -1,6 +1,6 @@
 {
   "name": "react-bitcoin-qr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React component for a Bitcoin QR code. Supports optional attributes 'amount' and 'message' in addition to required attribute 'address'. Also acts as a link for browsers that support 'bitcoin:' format URIs.",
   "main": "index.js",
   "dependencies": {
