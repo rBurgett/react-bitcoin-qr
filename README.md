@@ -2,7 +2,7 @@
 
 React.js Bitcoin QR code component.
 
-(Built on JP Richardson's nice react-qr package)
+( Really just a bitcoin convenience wrapper for JP Richardson's wonderful [react-qr](https://github.com/jprichardson/react-qr) package )
 
 ## Installation
 
