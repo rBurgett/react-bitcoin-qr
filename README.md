@@ -12,11 +12,11 @@ React.js Bitcoin QR code component.
 ## Usage (in React app)
 
 ```js
-var QRCode = require('react-bitcoin-qr')
+var BitcoinQRCode = require('react-bitcoin-qr')
 
 var component = React.createClass({
   render: function() {
-    <BitcoinQRCode address='1PEoUKNxTZsc5rFSQvQjeTVwDE9vEDCRWm' amount='100000' message='One hundred thousand satoshi (1 mBTC) donation to BitGive' />
+    return <BitcoinQRCode address='1PEoUKNxTZsc5rFSQvQjeTVwDE9vEDCRWm' amount='100000' message='One hundred thousand satoshi (1 mBTC) donation to BitGive' />
   }
 })
 ```
