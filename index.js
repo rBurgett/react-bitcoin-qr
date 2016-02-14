@@ -4,6 +4,10 @@ var React = require('react')
 
 var BitcoinQRCode = React.createClass({
     render: function () {
+        if (!this.props.address) {
+            return (<div className='react-bitcoin-qr react-bitcoin-qr-no-address'></div>)
+        }
+        
         var uri = new Bitcore.URI({
             address: this.props.address,
             amount: this.props.amount,
@@ -11,7 +15,7 @@ var BitcoinQRCode = React.createClass({
             label: this.props.label
         })
         
-        return (<a href={uri.toString()} target='_blank'><QRCode text={uri.toString()} /></a>)
+        return (<div className='react-bitcoin-qr'><a href={uri.toString()} target='_blank'><QRCode text={uri.toString()} /></a></div>)
     }
 })
 
